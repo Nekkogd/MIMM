@@ -15,7 +15,7 @@ In this example, we approximate the well-known Ishigami function with a total-de
 
 import numpy as np
 import math
-from UQpy.distributions import Uniform, JointIndependent
+from UQpy.distributions import Uniform, JointIndependent, Normal
 from UQpy.surrogates import *
 
 # %% md
@@ -24,7 +24,6 @@ from UQpy.surrogates import *
 # :math:`f(x_1, x_2, x_3) = \sin(x_1) + a \sin^2(x_2) + b x_3^4 \sin(x_1)`
 
 # %%
-
 # function to be approximated
 def ishigami(xx):
     """Ishigami function"""
